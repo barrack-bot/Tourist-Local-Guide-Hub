@@ -61,7 +61,6 @@ header nav ul li a:hover {
     text-align: center; /* Center text inside the card */
 }
 
-}
 /* General Section Styling */
 section {
     padding: 2rem;
@@ -81,6 +80,10 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 500px;
+}
+.card img, .guide-card img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Search Form Styling */
@@ -111,6 +114,10 @@ section h2 {
     cursor: pointer;
     font-weight: bold;
 }
+#search-form input, #testimonial-form input, #testimonial-form textarea {
+    transition: border-color 0.3s ease;
+}
+
 
 #search-form button:hover {
     background-color: #3b7ab8;

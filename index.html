@@ -174,7 +174,7 @@
             <div class="lastback">
         <section id="submit-testimonial">
             <h2>Submit Your Testimonial</h2>
-            <form id="testimonial-form" action="/submit-testimonial" method="POST">
+            <form id="testimonial-form" action="https://formspree.io/f/xjkkpkng" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="text" name="location" placeholder="Your Location" required>
                 <textarea name="testimonial" placeholder="Your Testimonial" rows="4" required></textarea>
@@ -212,6 +212,11 @@
             }
         });
     }
+    app.post('/submit-testimonial', (req, res) => {
+    // Handle the form data
+    res.send('Form submitted successfully!');
+});
+
 </script>
     <!-- Footer -->
     <footer>
